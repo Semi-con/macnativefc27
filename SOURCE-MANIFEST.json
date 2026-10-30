@@ -28,8 +28,8 @@
     },
     {
       "path": "PROVENANCE.json",
-      "bytes": 1252,
-      "sha256": "5e524fc10cfc80509a8a5e217a590a78295956b6d1f9719c0978a8038876398d"
+      "bytes": 1681,
+      "sha256": "f5255afe1e96221f094ada61e03f512802f45698460d6d5ef18dc80d8916729c"
     },
     {
       "path": "PUBLICATION.md",
@@ -38,13 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4013,
-      "sha256": "fce60dc6eb043cd2980baeb078d16742d1c63ca1a7b9cbd865168e26f471c745"
+      "bytes": 4309,
+      "sha256": "7e24ad89c77c1028bc512e797a23cf9005c158ac35cb3242e0a4681461bc8a21"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2335,
-      "sha256": "fdfad73dd8f359024fa2cca69833ea49fdbd1f873c5cf29dc0b3ecd6e7dbcae1"
+      "bytes": 3072,
+      "sha256": "000204b7cfae6614de7479f46ad48befaf658843471e618061b032dd958ed45d"
     },
     {
       "path": "crates/nxabi/Cargo.toml",
@@ -218,8 +218,8 @@
     },
     {
       "path": "crates/nxhost/src/fc27_menu_auto_lifecycle.rs",
-      "bytes": 8582,
-      "sha256": "81ca321c50f2ffeeb9c9a5c1c693c22cc4ef09d307830c4424731a5711699de8"
+      "bytes": 9214,
+      "sha256": "38ba6bfc382660760894109a9b77e76e9792f9b790a9f6162fae87563da0daa6"
     },
     {
       "path": "crates/nxhost/src/fc27_menu_event_observation.rs",
@@ -368,8 +368,8 @@
     },
     {
       "path": "crates/nxhost/src/menu_cinematic_diagnostics.rs",
-      "bytes": 14781,
-      "sha256": "2cefef5587ac8528d0a42826fa5b0139126a3cf23418ef7dbe68921f4ffd0fbe"
+      "bytes": 15940,
+      "sha256": "b93abe1831c40985dd822c75dbd8dd6b783f5d95c5a06a96b773e95c1d88eb34"
     },
     {
       "path": "crates/nxhost/src/menu_config_diagnostics.rs",
@@ -912,9 +912,24 @@
       "sha256": "7e1794921896e44429426ebaf646e58dd23bcaaae34296540eb07295dbbdf609"
     },
     {
+      "path": "docs/HANDOFF.md",
+      "bytes": 2942,
+      "sha256": "4783b9934380978a918830c1c478c159c4bf500620839be030d1852798c4d65d"
+    },
+    {
       "path": "docs/LOCAL_INPUTS.md",
-      "bytes": 1914,
-      "sha256": "f92c8fee2d50c0346319199391005f341ebf84047fee4882d79e164788ce11e9"
+      "bytes": 1246,
+      "sha256": "eb1b43aa5ec8302d3e53fdba738d178e4ce7d4fc12c3fd06871b4d0cc35e8cb7"
+    },
+    {
+      "path": "docs/REPRODUCE.md",
+      "bytes": 5095,
+      "sha256": "37402eab83301060a3e2dacfc30e157db21857337e135a2d78c2f622e7a64b09"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.json",
+      "bytes": 343,
+      "sha256": "b81a0eb30da648704cd46d7b4dcef178f6d4a8befd2022c727f391b432e53465"
     },
     {
       "path": "games/fc27/identity.json",
@@ -935,6 +950,11 @@
       "path": "launcher/launch_game.py",
       "bytes": 5117,
       "sha256": "04acff5170e1063a17742a3c288d735e46ca5953186aefcd7224318ecccf5030"
+    },
+    {
+      "path": "licenses/GPL-2.0.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
     },
     {
       "path": "licenses/MacNativeGames-MIT.txt",
@@ -985,6 +1005,31 @@
       "path": "tools/control_game.py",
       "bytes": 8410,
       "sha256": "eb47d7ec4a54be50fc635a138b7da1211aecf4ca9f09385e06a5d80af356c9d9"
+    },
+    {
+      "path": "tools/decoder-requirements.txt",
+      "bytes": 29,
+      "sha256": "f959ae0ca6120629135f309610bd301be0ba98148c423ec7b5f2928bd0df5989"
+    },
+    {
+      "path": "tools/normalize_nso.py",
+      "bytes": 3153,
+      "sha256": "4744424bf74edfe935ecfd7dd4afbbf4cf29028b7810f73e6dbdf7b548a21996"
+    },
+    {
+      "path": "tools/prepare_fc27.py",
+      "bytes": 4164,
+      "sha256": "9e13478499cf593834bb065448c1b15a154f31022efada844b21a2831ee9c640"
+    },
+    {
+      "path": "tools/prepare_menu.py",
+      "bytes": 6985,
+      "sha256": "45fdcc6f8004fc5baca0c454a527f307602f9c89dd0234d4a9c58eb5eb83fd86"
+    },
+    {
+      "path": "tools/run_fc27.py",
+      "bytes": 7804,
+      "sha256": "1e3c5136bfd0dc96406076f7a16cc892b9eb928becb9722c6d47d97e9ddd7c20"
     }
   ]
 }

@@ -15,9 +15,16 @@ impl State{
             Stage::Idle if self.wanted&&selected_allowed&&self.cycles<4=>{
                 self.cycles+=1;self.stage=Stage::PrimeQueued;Some(Operation::Prime)
             },
+            Stage::PrimeQueued if prime&&!self.wanted=>{
+                // Original1b9f600 can unprime an owned runtime with an empty
+                // registration list. A later frontend may never request Prep;
+                // cancellation must not depend on that absent completion.
+                // Real Prime completion and the original UnPrime return gate
+                // remain required; no readiness event is invented.
+                self.stage=Stage::UnprimeQueued;self.unprime_dispatched=false;self.unprime_returned=false;Some(Operation::Unprime)
+            },
             Stage::PrimeQueued if prime&&prep=>{
-                if self.wanted{self.stage=Stage::StartQueued;Some(Operation::Start)}
-                else{self.stage=Stage::UnprimeQueued;self.unprime_dispatched=false;self.unprime_returned=false;Some(Operation::Unprime)}
+                self.stage=Stage::StartQueued;Some(Operation::Start)
             },
             Stage::StartQueued if !self.wanted&&selected_allowed=>{
                 self.stage=Stage::UnprimeQueued;self.unprime_dispatched=false;self.unprime_returned=false;Some(Operation::Unprime)
@@ -126,10 +133,12 @@ pub(crate)fn poll(){
         s.wanted=true;assert_eq!(s.next(true,true,true,true),None);assert_eq!(s.stage,Stage::Idle);
         assert_eq!(s.next(true,false,false,true),Some(Operation::Prime));assert_eq!(s.cycles,2);
     }
-    #[test]fn leaving_during_preparation_waits_for_real_completion_then_only_unprimes(){
+    #[test]fn cancelling_a_primed_only_later_cycle_does_not_wait_for_unrequested_prep(){
         let mut s=State::new();s.wanted=true;assert_eq!(s.next(true,false,false,true),Some(Operation::Prime));
-        s.wanted=false;assert_eq!(s.next(true,true,false,false),None);
-        assert_eq!(s.next(true,true,true,false),Some(Operation::Unprime));
+        s.wanted=false;assert_eq!(s.next(true,false,false,false),None);
+        assert_eq!(s.next(true,false,true,false),None,"stale Prep cannot replace real Prime completion");
+        assert_eq!(s.next(true,true,false,false),Some(Operation::Unprime));
+        assert_eq!(s.next(true,true,false,true),None);assert_eq!(s.stage,Stage::UnprimeQueued);
         s.unprime_dispatched=true;s.unprime_returned=true;s.next(true,true,true,true);
         s.cycles=4;s.wanted=true;assert_eq!(s.next(true,false,false,true),None);
     }

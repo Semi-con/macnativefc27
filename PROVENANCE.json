@@ -18,5 +18,10 @@
     "commit": "5281186af56bdcce6ae9b3bb9daa9791bc02994e"
   },
   "data_policy": "No games, keys, firmware, extracted/rewritten modules, translated game shaders, assets, saves, screenshots, audio, private logs or prior Git objects.",
-  "verification": "Export build/test results must be recorded separately; original-game runtime evidence does not establish acceptance of this source export."
+  "verification": "Export build/test results must be recorded separately; original-game runtime evidence does not establish acceptance of this source export.",
+  "portable_preparation": {
+    "normalizer": "Standalone GPL-2.0-only Python program with separately installed decoder; separate process and files, not linked into runtime",
+    "menu_recipe": "Functional offsets/identifiers and complete input/output checksum guards only; all assets generated from user inputs",
+    "runtime_sync": "Includes primed-only cancellation handling and read-only menu runtime field diagnostics"
+  }
 }

@@ -77,12 +77,22 @@ pub(crate) fn registered_menu_asset(address:u64,base:u64,hash:u32)->Option<u64>{
     (snapshot(asset,&mut bytes)&&word(&bytes,0)==Some(base+0xc886208)&&word(&bytes,8)==Some(base+0xd6d9dc8)).then_some(asset)
 }
 #[derive(Clone,Copy,Debug,PartialEq,Eq)]
-pub(crate) struct MenuRuntimeState{pub(crate) registrations:u32,pub(crate) list_empty:bool}
+pub(crate) struct MenuRuntimeState{
+    pub(crate) registrations:u32,pub(crate) list_empty:bool,
+    pub(crate) source_attached:bool,pub(crate) word_40:u32,pub(crate) word_4c:u32,
+    pub(crate) bytes_c9_cc:[u8;4],
+}
 fn runtime_fields(bytes:&[u8],address:u64,manager:u64,asset:u64)->Option<MenuRuntimeState>{
     if word(bytes,0)!=Some(asset)||word(bytes,0x80)!=Some(manager){return None;}
     let registrations=u32::from_le_bytes(bytes.get(0x128..0x12c)?.try_into().ok()?);
     if registrations>4096{return None;}
-    Some(MenuRuntimeState{registrations,list_empty:word(bytes,0xe8)==Some(address+0xe8)&&word(bytes,0xf0)==Some(address+0xe8)})
+    Some(MenuRuntimeState{
+        registrations,list_empty:word(bytes,0xe8)==Some(address+0xe8)&&word(bytes,0xf0)==Some(address+0xe8),
+        source_attached:word(bytes,8)?!=0,
+        word_40:u32::from_le_bytes(bytes.get(0x40..0x44)?.try_into().ok()?),
+        word_4c:u32::from_le_bytes(bytes.get(0x4c..0x50)?.try_into().ok()?),
+        bytes_c9_cc:bytes.get(0xc9..0xcd)?.try_into().ok()?,
+    })
 }
 // The original RequestUnPrime handler finds runtime instances in manager+62400,
 // then1b9f600 clears its registration list and restores empty links/count.
@@ -122,7 +132,9 @@ fn manager_index(address:u64,base:u64)->Value{
                     "AutomaticPrepSchematics":(typed&&automatic_prep_version).then_some(bytes[0x9d]).filter(|v|*v<=1),
                     "FullSuspendBCEngineWhileRunning":typed.then_some(bytes[0xe2]).filter(|v|*v<=1),
                     "runtime_registrations":match menu_runtime_state(address,base,*key){
-                        Ok(Some(s))=>json!({"present":true,"count":s.registrations,"list_empty":s.list_empty,"limits":"May be empty during playback; not animation or resource-release completion."}),
+                        Ok(Some(s))=>json!({"present":true,"count":s.registrations,"list_empty":s.list_empty,
+                            "source_attached_08":s.source_attached,"raw_word_40":s.word_40,"raw_word_4c":s.word_4c,"raw_bytes_c9_cc":s.bytes_c9_cc,
+                            "limits":"Read-only raw fields for original preparation analysis; not interpreted as playback/cleanup completion. Registration list may be empty during playback."}),
                         Ok(None)=>json!({"present":false}),Err(error)=>json!({"error":error}),
                     }})
             },
@@ -191,7 +203,10 @@ mod tests {
         let address=0x7400000000u64;let manager=0x7500000000u64;let asset=0x7600000000u64;
         let mut bytes=[0;0x130];bytes[..8].copy_from_slice(&asset.to_le_bytes());bytes[0x80..0x88].copy_from_slice(&manager.to_le_bytes());
         for at in [0xe8,0xf0]{bytes[at..at+8].copy_from_slice(&(address+0xe8).to_le_bytes());}
-        assert_eq!(runtime_fields(&bytes,address,manager,asset),Some(MenuRuntimeState{registrations:0,list_empty:true}));
+        assert_eq!(runtime_fields(&bytes,address,manager,asset),Some(MenuRuntimeState{registrations:0,list_empty:true,source_attached:false,word_40:0,word_4c:0,bytes_c9_cc:[0;4]}));
+        bytes[8..16].copy_from_slice(&0x7700000000u64.to_le_bytes());
+        bytes[0x40..0x44].copy_from_slice(&0xaabbccddu32.to_le_bytes());bytes[0x4c..0x50].copy_from_slice(&2u32.to_le_bytes());bytes[0xc9..0xcd].copy_from_slice(&[0,1,2,3]);
+        let observed=runtime_fields(&bytes,address,manager,asset).unwrap();assert!(observed.source_attached);assert_eq!((observed.word_40,observed.word_4c,observed.bytes_c9_cc),(0xaabbccdd,2,[0,1,2,3]));
         bytes[0x128..0x12c].copy_from_slice(&2u32.to_le_bytes());assert_eq!(runtime_fields(&bytes,address,manager,asset).unwrap().registrations,2);
         bytes[0xe8]^=8;assert!(!runtime_fields(&bytes,address,manager,asset).unwrap().list_empty);
         assert!(runtime_fields(&bytes,address,manager+8,asset).is_none());assert!(runtime_fields(&bytes,address,manager,asset+8).is_none());
