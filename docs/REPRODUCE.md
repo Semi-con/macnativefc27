@@ -47,18 +47,33 @@ python3.14 tools/prepare_fc27.py \
 
 公开 `nxpatch verify` 没有包含私有验证环境的可选 Unicorn 组件，会明确失败。准备流程中的完整哈希比对不能代替指令等价验证。
 
-## 隔离启动
+## 首次初始化与隔离启动
+
+**全新存档先使用普通菜单完成初始化。** 不要在首次辅助设置、协议及喜爱球队选择尚未完成时启用 3D 菜单实验。直接启用实验曾出现主页可见但导航不一致的现象，是否涉及初始化界面被遮挡仍需定位；存在 `DATA` 文件也不能证明初始化完成。
 
 ```sh
 python3.14 tools/run_fc27.py \
   --prepared "$FC27_LOCAL/stage" \
   --firmware /path/to/own/firmware/registered \
   --dlc /path/to/own/dlc-or-combined.xci \
-  --out "$FC27_LOCAL/run-001" \
+  --out "$FC27_LOCAL/run-001"
+```
+
+DLC 可选，可重复 `--dlc`。默认生成全新 profile，使用全新的着色器缓存。需要在首次运行时自己处理协议、语言、辅助设置及喜爱球队等初始选择；脚本不自动同意协议。确认正常进入主页、能够导航后，正常退出游戏。
+
+启用菜单实验时，复制刚才完成初始化的本机 profile，使用新的运行目录：
+
+```sh
+python3.14 tools/run_fc27.py \
+  --prepared "$FC27_LOCAL/stage" \
+  --firmware /path/to/own/firmware/registered \
+  --dlc /path/to/own/dlc-or-combined.xci \
+  --profile-source "$FC27_LOCAL/run-001/profile" \
+  --out "$FC27_LOCAL/run-002" \
   --menu-experiment
 ```
 
-DLC 可选，可重复 `--dlc`。默认生成全新 profile，使用全新的着色器缓存。需要在首次运行时自己处理协议、语言和初始设置；不自动同意协议。若要继续自己的已有进度，可显式增加 `--profile-source /path/to/own/profile`，脚本复制到本次 run，原目录不被当成可写存档。
+也可使用自己已经完成初始化的已有 profile。脚本复制到本次 run，原目录不被当成可写存档；实验模式要求显式提供 `--profile-source`，但不会把文件存在误报为首次设置已完成。需要原用户自行确认初始化状态。
 
 程序在新的本地测试 App 中运行，使用源码里的版本/进程保护和独立测试控制通道，最长默认 1200 秒。不会覆盖 `/Applications` 下的游戏。窗口可正常退出；超时或互斥运行请求会结束测试进程。退出码为零只表示进程正常结束。
 

@@ -913,8 +913,8 @@
     },
     {
       "path": "docs/HANDOFF.md",
-      "bytes": 3262,
-      "sha256": "edf11c68b5a55edc1dfeaa14ebc836625c8b204dec02f86f37e7039a6afafacd"
+      "bytes": 3460,
+      "sha256": "8d0d388b99b1105b554a39e963b0c6960f705d2a96566cacf7e75460a09eecd3"
     },
     {
       "path": "docs/LOCAL_INPUTS.md",
@@ -923,13 +923,13 @@
     },
     {
       "path": "docs/REPRODUCE.md",
-      "bytes": 5377,
-      "sha256": "f76fa5e42c66b10a66d9e538a3a54c420b4a654fa2946994d2bb5dd56f7ed94e"
+      "bytes": 6295,
+      "sha256": "2fcf9c1510c3d783d9d6f89034dc6d99b09279c15406f6608d2fb597e591f64b"
     },
     {
       "path": "docs/REPRODUCIBILITY.json",
-      "bytes": 1288,
-      "sha256": "70e435ca31230533aaac7d578fefe7700e592a2f29d63ddae2a42cec204e2943"
+      "bytes": 1570,
+      "sha256": "89e60b557258f324f612e2ed2b7c82ab71bca7a8d140f081b2cc03926406ff6d"
     },
     {
       "path": "games/fc27/identity.json",
@@ -1033,8 +1033,8 @@
     },
     {
       "path": "tools/run_fc27.py",
-      "bytes": 7804,
-      "sha256": "1e3c5136bfd0dc96406076f7a16cc892b9eb928becb9722c6d47d97e9ddd7c20"
+      "bytes": 8079,
+      "sha256": "04225ccd29fbc94ce3e753541d6f6813353ff64f15f594d4fc96dde3087c73ae"
     }
   ]
 }

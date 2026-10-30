@@ -29,7 +29,9 @@
     "initial_3d_menu_animation_observed": true,
     "fresh_profile": true,
     "private_game_derived_caches_reused": false,
-    "rust_dependency_build_cache_reused": true
+    "rust_dependency_build_cache_reused": true,
+    "ordinary_fresh_profile_initial_setup_observed": true
   },
-  "remaining_reproduction_issue": "Fresh profile with experimental menu: inconsistent navigation; testing ordinary first initialization before experimental launch. Full match acceptance is not inferred."
+  "remaining_reproduction_issue": "Initialized-profile experimental match path still being verified. Direct fresh-profile experimental navigation failed; ordinary first setup has passed through accessibility, agreement and favorite-team selection to the home screen.",
+  "experimental_profile_precondition": "Requires explicit --profile-source after completing ordinary first setup; existence of DATA alone is not acceptance."
 }

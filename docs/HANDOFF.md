@@ -22,7 +22,7 @@
 | `tools/control_game.py` | 受保护的本地输入与有时限的诊断操作 |
 | `tools/menu_state.py` | 请求有边界的只读菜单报告，提取 master 状态到本机证据文件 |
 
-除完整前缀所示外，菜单 Rust 文件位于 `crates/nxhost/src/`。实验代码默认关闭；`run_fc27.py --menu-experiment` 接齐前置条件。不要移除精确版本、原始方法和真实完成事件保护来绕过失败。
+除完整前缀所示外，菜单 Rust 文件位于 `crates/nxhost/src/`。实验代码默认关闭；`run_fc27.py --menu-experiment --profile-source ...` 接齐实验开关，使用已经通过普通菜单完成首次设置的 profile 副本。新档直接启用实验的引导路径未通过，启动脚本明确拒绝省略 profile 来源的实验。不要移除精确版本、原始方法和真实完成事件保护来绕过失败。
 
 ## 下一步验证
 

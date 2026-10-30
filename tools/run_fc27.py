@@ -50,6 +50,8 @@ def main():
     args = parser.parse_args()
     if not 30 <= args.seconds <= 3600:
         parser.error('--seconds must be between 30 and 3600')
+    if args.menu_experiment and args.profile_source is None:
+        parser.error('Complete first initialization without --menu-experiment, quit normally, then use --profile-source with that initialized profile. A DATA file alone does not prove initialization is complete.')
     out, prepared = args.out.resolve(), args.prepared.resolve()
     if out.is_relative_to(ROOT) or out.is_relative_to(prepared):
         parser.error('Use a new run directory outside the checkout and preparation directory')
