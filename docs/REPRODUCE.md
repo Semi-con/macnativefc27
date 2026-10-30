@@ -70,7 +70,7 @@ python3.14 tools/control_game.py "$FC27_LOCAL/run-001" --frame --wait-frame
 python3.14 tools/control_game.py "$FC27_LOCAL/run-001" --inspect-render-quality
 ```
 
-截图等证据只留本机。冷缓存首次编译可能明显停顿，不能将首次加载窗口作为稳定帧率证据。
+截图等证据只留本机。冷缓存首次编译可能持续数分钟，单帧内也可能排队编译很多管线；查看本机 `host.log` 中持续出现的 shader/pipeline 编译记录确认进展。此时截图请求可能超过控制工具的 20 秒等待期；工具超时不代表游戏进程退出，已排队的截图仍可能稍后生成。不能将首次加载窗口作为稳定帧率证据。
 
 ## 如何理解“复现到当前进度”
 

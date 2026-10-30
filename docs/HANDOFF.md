@@ -20,6 +20,7 @@
 | `menu_cinematic_diagnostics.rs` | 有边界的只读类型/运行状态诊断 |
 | `crates/nxhost/src/nvn/`、`crates/nxshader/` | Metal 资源、调度与着色器转换 |
 | `tools/control_game.py` | 受保护的本地输入与有时限的诊断操作 |
+| `tools/menu_state.py` | 请求有边界的只读菜单报告，提取 master 状态到本机证据文件 |
 
 除完整前缀所示外，菜单 Rust 文件位于 `crates/nxhost/src/`。实验代码默认关闭；`run_fc27.py --menu-experiment` 接齐前置条件。不要移除精确版本、原始方法和真实完成事件保护来绕过失败。
 
@@ -30,3 +31,5 @@
 3. 在实际原生 1080p 比赛场景核实渲染设置、目标与 viewport，再取暖运行帧率；不能只凭显示窗口或 60 帧配置宣称达标。
 
 私有运行记录、截图、原始资源、着色器捕获、游戏模块、密钥、固件和存档均未公开。读取本人的输入并重新产生这些本地产物是复现的一部分。公开测试中移除的可选验证器/捕获夹具见 `PROVENANCE.json`；不要将未执行或忽略的测试计为通过。
+
+只读菜单状态示例：`python3.14 tools/menu_state.py /path/to/run --label after-match`。在实际状态稳定后请求，避免与性能采样重叠；报告不自动决定动画或清理是否成功。

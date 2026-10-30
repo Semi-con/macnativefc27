@@ -1,5 +1,5 @@
 {
-  "status": "independent verification pending",
+  "status": "Source preparation and first 3D menu verified; full match reproduction pending",
   "date": "2026-10-30",
   "scope": "Portable source preparation and isolated launch; no game data distributed",
   "not_claimed": [
@@ -7,5 +7,29 @@
     "Second menu lifecycle fixed",
     "Physical controller and subjective audiovisual acceptance",
     "Legal clearance"
-  ]
+  ],
+  "verified_source_commit": "2df4a19182de9ac79f245fe0840059b287efbd7e",
+  "environment": {
+    "machine": "Apple M1 Max",
+    "memory_gib": 32,
+    "os": "macOS 27.0.1",
+    "rust": "1.99.1",
+    "python": "3.14"
+  },
+  "checks": {
+    "clean_checkout_release_build": true,
+    "workspace_tests": {
+      "passed": 237,
+      "failed": 0,
+      "ignored": 67
+    },
+    "original_nso_segment_hashes_verified": 9,
+    "rewritten_modules_match_development": 4,
+    "complete_menu_resource_outputs_match_development": 4,
+    "initial_3d_menu_animation_observed": true,
+    "fresh_profile": true,
+    "private_game_derived_caches_reused": false,
+    "rust_dependency_build_cache_reused": true
+  },
+  "remaining_reproduction_issue": "Fresh profile with experimental menu: inconsistent navigation; testing ordinary first initialization before experimental launch. Full match acceptance is not inferred."
 }

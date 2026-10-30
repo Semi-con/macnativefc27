@@ -913,8 +913,8 @@
     },
     {
       "path": "docs/HANDOFF.md",
-      "bytes": 2942,
-      "sha256": "4783b9934380978a918830c1c478c159c4bf500620839be030d1852798c4d65d"
+      "bytes": 3262,
+      "sha256": "edf11c68b5a55edc1dfeaa14ebc836625c8b204dec02f86f37e7039a6afafacd"
     },
     {
       "path": "docs/LOCAL_INPUTS.md",
@@ -923,13 +923,13 @@
     },
     {
       "path": "docs/REPRODUCE.md",
-      "bytes": 5095,
-      "sha256": "37402eab83301060a3e2dacfc30e157db21857337e135a2d78c2f622e7a64b09"
+      "bytes": 5377,
+      "sha256": "f76fa5e42c66b10a66d9e538a3a54c420b4a654fa2946994d2bb5dd56f7ed94e"
     },
     {
       "path": "docs/REPRODUCIBILITY.json",
-      "bytes": 343,
-      "sha256": "b81a0eb30da648704cd46d7b4dcef178f6d4a8befd2022c727f391b432e53465"
+      "bytes": 1288,
+      "sha256": "70e435ca31230533aaac7d578fefe7700e592a2f29d63ddae2a42cec204e2943"
     },
     {
       "path": "games/fc27/identity.json",
@@ -1010,6 +1010,11 @@
       "path": "tools/decoder-requirements.txt",
       "bytes": 29,
       "sha256": "f959ae0ca6120629135f309610bd301be0ba98148c423ec7b5f2928bd0df5989"
+    },
+    {
+      "path": "tools/menu_state.py",
+      "bytes": 2501,
+      "sha256": "daf73e40322f1848b9a028dbe474af5c717ff2cf2e3eb4d8209268da628d07dd"
     },
     {
       "path": "tools/normalize_nso.py",
