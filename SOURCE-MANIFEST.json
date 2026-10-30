@@ -1,0 +1,990 @@
+{
+  "scope": "source-only export; no legal clearance claim",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 539,
+      "sha256": "1efe595956d5ded2ffec5d35e08af9d9d69251854b68debf81c3c633226495ef"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1209,
+      "sha256": "4e8afb4e1b52e73ba793abe42e240873dd5cfdcf8a58a32dc3ce31869babd067"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 40332,
+      "sha256": "caa7f864ead225127416a60b7a5c5acee35d5f623e4ed0c8fa09e96a18235c91"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 92,
+      "sha256": "4f4a2bb8d7704de5b6557a9239e9f712f9d2ad59687d62dab44a20f1812787bc"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 1252,
+      "sha256": "5e524fc10cfc80509a8a5e217a590a78295956b6d1f9719c0978a8038876398d"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 1545,
+      "sha256": "dc4a248b30a3e4979b0f32660259662fa64de58796dd367a42a2b34ccdbee934"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4013,
+      "sha256": "fce60dc6eb043cd2980baeb078d16742d1c63ca1a7b9cbd865168e26f471c745"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2335,
+      "sha256": "fdfad73dd8f359024fa2cca69833ea49fdbd1f873c5cf29dc0b3ecd6e7dbcae1"
+    },
+    {
+      "path": "crates/nxabi/Cargo.toml",
+      "bytes": 101,
+      "sha256": "5011979a6d15209e4eb1fb2dd96df00118e46c04fb8cd61099f259663a8827d3"
+    },
+    {
+      "path": "crates/nxabi/src/lib.rs",
+      "bytes": 1053,
+      "sha256": "ace11f771927a5200ab4b08f535d9e838e058506b9ad80bc3aba39e8fef35180"
+    },
+    {
+      "path": "crates/nxfs/Cargo.toml",
+      "bytes": 257,
+      "sha256": "34789836ad8bb819ba9771701a1708baf6c22822d651188558dd9ed826015ec0"
+    },
+    {
+      "path": "crates/nxfs/src/bflan.rs",
+      "bytes": 5242,
+      "sha256": "b19eb5996b20435a285ddd6650a91988f0fb9d6a8668d50e66ad785d609b8b8d"
+    },
+    {
+      "path": "crates/nxfs/src/bflyt.rs",
+      "bytes": 8565,
+      "sha256": "8d47da2b54ef492b43c9594d8cca42645b56a6a3c7826035b25f3abd572a30fb"
+    },
+    {
+      "path": "crates/nxfs/src/bntx.rs",
+      "bytes": 6132,
+      "sha256": "597f3a9295b679d1ac71b595bf32fe601c81c81bee2945f83ad9e90245685690"
+    },
+    {
+      "path": "crates/nxfs/src/crypto.rs",
+      "bytes": 2392,
+      "sha256": "eaa6e6f6194e27e50fe1297d28d59394e3cd7a817a563f24b5fa23b478faa0ac"
+    },
+    {
+      "path": "crates/nxfs/src/ivfc.rs",
+      "bytes": 4982,
+      "sha256": "3c56330418dfc52d8fefc7ce89b68a34013d7171dfa20bfc1bed61f6d7c94d44"
+    },
+    {
+      "path": "crates/nxfs/src/keys.rs",
+      "bytes": 1072,
+      "sha256": "6931f83743bcd8b9405ead25a279d42df1c679b422e26cd4a819bc6a6458827e"
+    },
+    {
+      "path": "crates/nxfs/src/lib.rs",
+      "bytes": 2924,
+      "sha256": "71e92510ccedc8f64a03f791ecc6aba049071eec202ff7d59179f97a1f1502d3"
+    },
+    {
+      "path": "crates/nxfs/src/main.rs",
+      "bytes": 11314,
+      "sha256": "53420779f50aaebeb2e559e09e4c6b72d8ddd27f4d1def7f73c336c4f4e36e8a"
+    },
+    {
+      "path": "crates/nxfs/src/module.rs",
+      "bytes": 9557,
+      "sha256": "799191d6b52489c07176597a7a1c895c7cea99878feae5eb2826acc23bd19506"
+    },
+    {
+      "path": "crates/nxfs/src/msbt.rs",
+      "bytes": 6336,
+      "sha256": "d8d1ece9e74a33d9e7cb14ca9fd698c5466432b6b13dea0497923dd360f3af3c"
+    },
+    {
+      "path": "crates/nxfs/src/nca.rs",
+      "bytes": 13856,
+      "sha256": "0a877cd863895cce7c5dbbfe4ba5d41cde56c2ea152d01d4ee5fe24e820c4bfb"
+    },
+    {
+      "path": "crates/nxfs/src/nso.rs",
+      "bytes": 5315,
+      "sha256": "9f051dddf50dd55127dd6bcd7326e7be5fec2413ca3fe919172d5d4a7692179e"
+    },
+    {
+      "path": "crates/nxfs/src/pfs0.rs",
+      "bytes": 3086,
+      "sha256": "e9ee265ed6f4f7d488d7ebd674ce98d625d6b9c4d947d4db4f9d275d64aa842b"
+    },
+    {
+      "path": "crates/nxfs/src/romfs.rs",
+      "bytes": 14246,
+      "sha256": "c5268e4307c06e7d6939947e225f513dc9b01de5a14ea2dc12abe97e9232add9"
+    },
+    {
+      "path": "crates/nxfs/src/sarc.rs",
+      "bytes": 10642,
+      "sha256": "836b5138815301904d5a01a42dfe307b132d839f8cb262b43570d8bcb2e677de"
+    },
+    {
+      "path": "crates/nxfs/src/storage.rs",
+      "bytes": 4822,
+      "sha256": "cceb1592fc99eda22a9af0fedb774122a560f83af3140ae45ca90846e76b9a04"
+    },
+    {
+      "path": "crates/nxhost/Cargo.toml",
+      "bytes": 1447,
+      "sha256": "a88babf2c0c1e4fe7492afe309ecc72faf6ea79b37295e3358b75efef158e6cc"
+    },
+    {
+      "path": "crates/nxhost/build.rs",
+      "bytes": 5581,
+      "sha256": "05ec5504e53351a49485292a9da2f202d263d0b88d68007607166da88770e99d"
+    },
+    {
+      "path": "crates/nxhost/src/aspect.rs",
+      "bytes": 23809,
+      "sha256": "5eab99f53cbca5e7ae4813cd3da644c8fa0c7a8646525064ae45a8a40acbcb52"
+    },
+    {
+      "path": "crates/nxhost/src/audio/dsp.rs",
+      "bytes": 7088,
+      "sha256": "4887de1f09bfe49efa6fd7d98d14fb2126a045509b2568eed7c3193ec21f37b5"
+    },
+    {
+      "path": "crates/nxhost/src/audio/effects.rs",
+      "bytes": 5524,
+      "sha256": "d171e2d36b95dd448ee4b856fd683ce7d839c5964c1bfdeed79ad317c4130c9a"
+    },
+    {
+      "path": "crates/nxhost/src/audio/mod.rs",
+      "bytes": 31973,
+      "sha256": "59d2320cda9fb44dfc03894ffde79c4237b40438b2bfd1cb40e73be45510ddf3"
+    },
+    {
+      "path": "crates/nxhost/src/audio/observe.rs",
+      "bytes": 2781,
+      "sha256": "f99ff8fea396aed8a39479904f4005e81b2cd05ab7fd9b9350a28178030db514"
+    },
+    {
+      "path": "crates/nxhost/src/audio/output.rs",
+      "bytes": 18607,
+      "sha256": "c7a7595f2168f119c7e9ec798a01d86a64ad86ab3163f24b98ee802366eb4fee"
+    },
+    {
+      "path": "crates/nxhost/src/audio/route.rs",
+      "bytes": 7947,
+      "sha256": "a90169796fcb6e134f208db08aea9f83173de429ebc565fe8378edf91ba2251d"
+    },
+    {
+      "path": "crates/nxhost/src/audio/system.rs",
+      "bytes": 8076,
+      "sha256": "6284587ddd41ee46b4929c68ef9a1b774bd63a95b5c59aa6407d56aff034c6a5"
+    },
+    {
+      "path": "crates/nxhost/src/diag.rs",
+      "bytes": 9062,
+      "sha256": "a0e87d6071a6129fa759e1a1121163ccc6477c7fbb17a88a7586f02a926edaf4"
+    },
+    {
+      "path": "crates/nxhost/src/dnssd.rs",
+      "bytes": 4256,
+      "sha256": "0225643b3462a140683856bf1816c9740a8e1d74feb760fcb2e6c36b62c9bd7c"
+    },
+    {
+      "path": "crates/nxhost/src/engine_frame_target.rs",
+      "bytes": 3643,
+      "sha256": "2a15a780d4055d29980fc1b1cc42e2aa87519b8410bc9e85b6704cf546eb1be3"
+    },
+    {
+      "path": "crates/nxhost/src/engine_limiter_control.rs",
+      "bytes": 6216,
+      "sha256": "091bad20ecc28424a79297932a77ed39844588a0d3682a3772ba796382ae31f7"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_ambassador_source.rs",
+      "bytes": 7751,
+      "sha256": "99f87d8f5c3f202f7d2c82da07aee0a25888e58aced57818ccf3a301847a9004"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_auto_lifecycle.rs",
+      "bytes": 8582,
+      "sha256": "81ca321c50f2ffeeb9c9a5c1c693c22cc4ef09d307830c4424731a5711699de8"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_event_observation.rs",
+      "bytes": 20534,
+      "sha256": "f7c8efd09efe770898d4844c9d4a11568d6d9a045822047902e5b2b232c74867"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_lifecycle_observation.rs",
+      "bytes": 7582,
+      "sha256": "f06ef99aafc224d923a8cd063e1cd29d8dd88c1ba219972b822ced27d1044e43"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_prime_probe.rs",
+      "bytes": 14436,
+      "sha256": "a22e89237c2b297236a2c3386e995b6f6ac09bbb8a2f0f93d6b3d1b03bbfb340"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_sequence_control.rs",
+      "bytes": 2866,
+      "sha256": "defe2ead68d60005b008ffacd42ec1b4c8bbb16ba9faf189ec14cfaacd4b1284"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_shadow_bindings.rs",
+      "bytes": 10767,
+      "sha256": "55c4ca352eb012eaa03322712d6ae156be7d9b321e920072ab8413df62bb8621"
+    },
+    {
+      "path": "crates/nxhost/src/fc27_menu_time_observation.rs",
+      "bytes": 20593,
+      "sha256": "85aed7066fbf2d66f21436c4c999e9fd48f379d84415c2c43f29cdea9a837691"
+    },
+    {
+      "path": "crates/nxhost/src/frame_wait_profile.rs",
+      "bytes": 6780,
+      "sha256": "ecb318dfd2341a52fd1e36595304e973d73bbc6fd137dc11fe89ffe0e3fb2378"
+    },
+    {
+      "path": "crates/nxhost/src/game.rs",
+      "bytes": 3769,
+      "sha256": "046e20033b3558ea23969ba93a5ad35041203c47b2858385adeff5fe2319c3f2"
+    },
+    {
+      "path": "crates/nxhost/src/gfx/bc.rs",
+      "bytes": 4241,
+      "sha256": "3e4d460b30a5eb9de91734a6c1083019b6d0da9c20f6f1bd9eff682db5f8db52"
+    },
+    {
+      "path": "crates/nxhost/src/gfx/ios.rs",
+      "bytes": 8838,
+      "sha256": "0afd4015c7defd1a90a09d8f8767c6d22f144f3ddd591a741c38de71395dab8e"
+    },
+    {
+      "path": "crates/nxhost/src/gfx/mod.rs",
+      "bytes": 37620,
+      "sha256": "4cc38797de035513d049d115be6413712efc4bdb5154590aa450a9893e1183d9"
+    },
+    {
+      "path": "crates/nxhost/src/gfx/overlay.rs",
+      "bytes": 11180,
+      "sha256": "b4423af00b45aab56cb5a2e38c91a5e9b80a592bce6a1fd479d4ee7a7764696f"
+    },
+    {
+      "path": "crates/nxhost/src/gfx/touch.rs",
+      "bytes": 10559,
+      "sha256": "6f4442d0763618ccfac7fcb991f7dcddcf2341003d6288ff451ff2299b5aa501"
+    },
+    {
+      "path": "crates/nxhost/src/guest.rs",
+      "bytes": 10611,
+      "sha256": "83a9a0fcfc9cebb78f600a1774fde847dbe47ad6f7198c7b45edf18f1f07f4b3"
+    },
+    {
+      "path": "crates/nxhost/src/haptics.rs",
+      "bytes": 13271,
+      "sha256": "fa0024b5c31651555d0ea3c937dbbe76a7886e5aa40b1f801f7c9dbf0ce63d05"
+    },
+    {
+      "path": "crates/nxhost/src/hle.rs",
+      "bytes": 2337,
+      "sha256": "85cd3349e6910b8b7d3862ae84e7683204bf03662766dad8f36b7499f200e6be"
+    },
+    {
+      "path": "crates/nxhost/src/input.rs",
+      "bytes": 24032,
+      "sha256": "163d03c2e84750b290518e8a172a69c618cbe9d55bbfc07d51d8c3b77be16977"
+    },
+    {
+      "path": "crates/nxhost/src/input_config_inspection.rs",
+      "bytes": 13115,
+      "sha256": "5d7bb53a691729d5c344a0f78d68a52cd3348a61959f27304332afb2a7fdee60"
+    },
+    {
+      "path": "crates/nxhost/src/input_frame_settings.rs",
+      "bytes": 7178,
+      "sha256": "76a8d41c9944a64f36ba377f5e2247efdde344750da448c84ff45e3572592b6b"
+    },
+    {
+      "path": "crates/nxhost/src/input_frame_settings_edit.rs",
+      "bytes": 9484,
+      "sha256": "e13be106a39cd329edb33d0ab56c9881a67dc79247d389dcd0b719210cc7c752"
+    },
+    {
+      "path": "crates/nxhost/src/input_menu_playback.rs",
+      "bytes": 26773,
+      "sha256": "067ce7d367a5bf0df47b777d93850dac0b9c6f21ea494c42242cd8223fcf0ac8"
+    },
+    {
+      "path": "crates/nxhost/src/input_render_quality.rs",
+      "bytes": 32665,
+      "sha256": "8c61053fa859302ac5138f6b3c9c662b2784031cf5c1d4a0b3d8da2e5f8a2ae2"
+    },
+    {
+      "path": "crates/nxhost/src/input_test_control.rs",
+      "bytes": 11875,
+      "sha256": "6ab0559d08bfc9cd28a185be6892d5240aeb463be9843a998f271c954c997903"
+    },
+    {
+      "path": "crates/nxhost/src/ipc.rs",
+      "bytes": 19475,
+      "sha256": "9d48d817ffbf929553ccd312aa3194602ea3564fd4f1985267c87bef4ad69265"
+    },
+    {
+      "path": "crates/nxhost/src/kernel.rs",
+      "bytes": 40179,
+      "sha256": "bc0dbe74b2953b96d7bd214c932d73a0fa65fd7da020eda395a6e02abba2ae59"
+    },
+    {
+      "path": "crates/nxhost/src/loader.rs",
+      "bytes": 15934,
+      "sha256": "4d886feb811a089f2a36ae932318d407645c29f8e76b1eef948102410149353c"
+    },
+    {
+      "path": "crates/nxhost/src/main.rs",
+      "bytes": 15755,
+      "sha256": "da74d2356e5d8ef664abf744dba6383aaad07ebb72f0bec1e298f2893c1c6840"
+    },
+    {
+      "path": "crates/nxhost/src/mem.rs",
+      "bytes": 10906,
+      "sha256": "792957dc44d86d73ad6585a0a1ed31aa1c83840dad3a458747a00ba6fc3d33c8"
+    },
+    {
+      "path": "crates/nxhost/src/menu_asset_io.rs",
+      "bytes": 3551,
+      "sha256": "b30f2b6132f2f6c554b89fca9feeed52e59599786026f9f6fc670cef98df156c"
+    },
+    {
+      "path": "crates/nxhost/src/menu_cinematic_diagnostics.rs",
+      "bytes": 14781,
+      "sha256": "2cefef5587ac8528d0a42826fa5b0139126a3cf23418ef7dbe68921f4ffd0fbe"
+    },
+    {
+      "path": "crates/nxhost/src/menu_config_diagnostics.rs",
+      "bytes": 5973,
+      "sha256": "5ecb2ed24fa138c29d69c24364cf616df3829db65d8100cef33e0ce15e0726ec"
+    },
+    {
+      "path": "crates/nxhost/src/menu_still_frame_diagnostics.rs",
+      "bytes": 4681,
+      "sha256": "5be6e56e8feea8ba6cdf625fa7fd531953f6cf67c6e1e31b5421850f562aceb7"
+    },
+    {
+      "path": "crates/nxhost/src/mods.rs",
+      "bytes": 7790,
+      "sha256": "6c7b68ccbb37dc0558d38281fe8ae85438160382bc12160ff35304651db76ee6"
+    },
+    {
+      "path": "crates/nxhost/src/motion.rs",
+      "bytes": 9579,
+      "sha256": "87097682a8812f3764808953d9811b0760a007533c6d8fa5a604853ddd6fbe19"
+    },
+    {
+      "path": "crates/nxhost/src/movie.rs",
+      "bytes": 24468,
+      "sha256": "ad858dc82157d2bac7a2f83484a519c665810a4c7196ef5c89dbffbf5a1f438f"
+    },
+    {
+      "path": "crates/nxhost/src/movie/video.rs",
+      "bytes": 7626,
+      "sha256": "092a586b326cd0e187202c89dcce40be466788b64234a42fae3e5b657ba829c5"
+    },
+    {
+      "path": "crates/nxhost/src/movie/webm.rs",
+      "bytes": 7707,
+      "sha256": "3a53e94514fba9eaabcb2ce63a1c3793d976f82f81861f5d089691b496636b9e"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/cmd.rs",
+      "bytes": 40710,
+      "sha256": "b6358358d3af35cb1107f69da801a8bed8e4eefaeeea5a3e5f450198a40c322a"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/address_table.rs",
+      "bytes": 13496,
+      "sha256": "4c569b9d85f892664afe15b7e8241bdcf9d532310a851c3b65fe244eefbfb89a"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/bindless.rs",
+      "bytes": 18252,
+      "sha256": "6d90a14ba856e83d727e7414e97ac160fbe985818e4300be3c91ddaee3b28a7c"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/buffer_direct.rs",
+      "bytes": 1885,
+      "sha256": "0b454a54ee954cab5f73527b77e1ed35d7f70816a0c6b1f4b25c397aacc37ce2"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/buffer_read_tests.rs",
+      "bytes": 13626,
+      "sha256": "efb8846e086227aea8a1c7be52506f15b55c51792d9ab012084b8f17cafdb3d5"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/copy.rs",
+      "bytes": 17889,
+      "sha256": "9e49c6360a062e6e15b47a89a010ec90aea5d6640971e3d7c42ae3e90df56d01"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/cpu_events.rs",
+      "bytes": 10460,
+      "sha256": "70d08e54d0f210f523380adb6a710e6a55d0ca7e20b188f4a93fa1eda0e771cf"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/dynamic_vertex.rs",
+      "bytes": 6824,
+      "sha256": "470202bde2e05150d56b95a32a96c4a38d4504a14119d71ec86ddfc692c61800"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/dynamic_vertex/tests.rs",
+      "bytes": 8748,
+      "sha256": "afbda36f89820cd78c405226b73cc0ea22c7152f41503f6c6091b001fd8d44ce"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/exec.rs",
+      "bytes": 69817,
+      "sha256": "495f4be99c79fd9b660b360a78ad44f642f9f3c4bed43828b34671c7001fa18e"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/fault_record_tests.rs",
+      "bytes": 2923,
+      "sha256": "78ed21c7a1a2f2669f2980870f443722d07d16e6418adb65cc0e1069bb1b0c83"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/fault_records.rs",
+      "bytes": 998,
+      "sha256": "ab163f593fc02a328983e818b64b47b66253161fbbd71979130b76596e880d0b"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/flat_page_tests.rs",
+      "bytes": 8325,
+      "sha256": "325330af3cd357335c6fed5948bd64c9ce0bfd2aa55531a9ce1f135a330fb3a3"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/gpu_counter_tests.rs",
+      "bytes": 4156,
+      "sha256": "d90e1d51bd89c6580b2c66883290ddfb0333f2929cf46684db780380b37fc190"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/gpu_counters.rs",
+      "bytes": 7518,
+      "sha256": "64f2eba3b401f2fe1c43a15e6725323c5ba3e9188382a17a1d17d8da789db0c9"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/gpu_wait.rs",
+      "bytes": 2627,
+      "sha256": "fe4d95fde618abb9e41c4c7092f96be483fa16999279c19ed6fbdc29fb2c9900"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/memory_load_tests.rs",
+      "bytes": 9799,
+      "sha256": "6e4de81b8f881e1e81bff45821edf1450c3af9b8b1ccd1544aa1033aa2b5b8bc"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/mod.rs",
+      "bytes": 239349,
+      "sha256": "1cf15f11f194f26e6c52d1d460c046dcd17022b8b640faa38f89bb68b7c7d48a"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/mufu_tests.rs",
+      "bytes": 4906,
+      "sha256": "77c0ef39831f4f4867c775cf5dd570ad6ffac973c84a92a059a38f7825419f97"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/page_cache_tests.rs",
+      "bytes": 5273,
+      "sha256": "6c634547256f1f8dbf4fd32f130fb17b6527e41f0e791c4f45977f33b56418d3"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/pool_lifetime_tests.rs",
+      "bytes": 4991,
+      "sha256": "5905afbe6cb9cf945e816db295868c537b59222749163749efe31e008e9dfb42"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/shader_writes.rs",
+      "bytes": 4951,
+      "sha256": "ea4947040c3ba4e86221e84a159705af61c04bec4387bb14834dcec81ee35eeb"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/shaders.rs",
+      "bytes": 50096,
+      "sha256": "64181e7dbf093046f43ee96811129080027eb6ac346913531e69e40bebd49de8"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/state.rs",
+      "bytes": 48951,
+      "sha256": "a35ca4610a7c01cb00b8db6fae1fb54a82d50ec7acbc6badf69488b66bd9feaf"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/structured_tests.rs",
+      "bytes": 14003,
+      "sha256": "185dc206434c7257f90936605c3a707076b286950a9b90e444a54a4a0014c0f3"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/submit_profile.rs",
+      "bytes": 4152,
+      "sha256": "b1c15a6fac8110174f3dcb1ef47a5f85498194ce72e47c275511db461558a711"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/textures.rs",
+      "bytes": 61603,
+      "sha256": "69984b948f02d2ff87a7ecf977f3ee24b55aa09d76fb6e4da58b9139918675fe"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/transfer_wait_tests.rs",
+      "bytes": 9839,
+      "sha256": "a48254a7c387f6a58493235075c8218d63ac889f710361ae36070c0849bb0d42"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/vertex_formats.rs",
+      "bytes": 13030,
+      "sha256": "e199643e1b11371653ca8dee0443861ed1f4503039f089b0074f9c5c50c1dc1d"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/draw/write_windows.rs",
+      "bytes": 6721,
+      "sha256": "5e0340c54776e5e781227e21a1e9e620674cdca33b4bd20c1b195ebd5f907d7f"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/events.rs",
+      "bytes": 4963,
+      "sha256": "4dd6a5ca52895f9ab18a9cecbc0cf4f04ff85454621bea757d4052f2d1267523"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/fx.rs",
+      "bytes": 1068,
+      "sha256": "7989a97003114704008ec2e0bc0204cde66516315107c2cf0f586bf1f176411b"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/gpu_domains.rs",
+      "bytes": 2598,
+      "sha256": "8207ec11d05f85cc750d620d2326a8141322d5d6d1699e4fd369c424bd1477aa"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/mod.rs",
+      "bytes": 14231,
+      "sha256": "0c467000918c5324db8dbd0bcb8b0bf500584447b94a2e583e221f0f80cfe2f7"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/objects.rs",
+      "bytes": 49938,
+      "sha256": "9d65eeb8da789013348dc55fe11b1975d3acfedbb441a775dd03ad9428d393ec"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/tex.rs",
+      "bytes": 9484,
+      "sha256": "2214f46d5cc5f24799e1a59e8c8a18337f3b8429c66816d28b126e2315a98b00"
+    },
+    {
+      "path": "crates/nxhost/src/nvn/virtual_lookup.rs",
+      "bytes": 2561,
+      "sha256": "360901b23fda25c02494228cfd014add3442d0fd9e9e1b5efc766837fbb815e6"
+    },
+    {
+      "path": "crates/nxhost/src/remote.rs",
+      "bytes": 13704,
+      "sha256": "d021540ea86ae438cd73ec7e1d81f3c81c3461ea4a03b26df3bfbe224687f51c"
+    },
+    {
+      "path": "crates/nxhost/src/ro.rs",
+      "bytes": 13318,
+      "sha256": "14b6caaba7041a03deb84faa79eecba570d06fd2950ae7875f50d981fa33c74e"
+    },
+    {
+      "path": "crates/nxhost/src/sdl.rs",
+      "bytes": 8250,
+      "sha256": "90f1cc439970f9f72b9e306bacdde5f89d0682187ae098c9bb5bdc4b0157e72f"
+    },
+    {
+      "path": "crates/nxhost/src/services/account.rs",
+      "bytes": 6144,
+      "sha256": "6854cb7e6875cddf8a160c133899e9f1bf881c002b7524d61d5f22d119e726af"
+    },
+    {
+      "path": "crates/nxhost/src/services/am.rs",
+      "bytes": 19609,
+      "sha256": "2173a0f8407513ec8234431797ca235a311b8afcec2d7fbe90139167c1f2bb42"
+    },
+    {
+      "path": "crates/nxhost/src/services/aoc.rs",
+      "bytes": 4283,
+      "sha256": "f4dd3e8337e8afb93fe6bdb1ff7acfa982dc53a2baf4c988602718788463b44a"
+    },
+    {
+      "path": "crates/nxhost/src/services/audio.rs",
+      "bytes": 4354,
+      "sha256": "8847c23de48910f727b33bbb0a0317510f3a3985ee384c3da7cce3a0212ad2e9"
+    },
+    {
+      "path": "crates/nxhost/src/services/audio_out.rs",
+      "bytes": 8866,
+      "sha256": "1ffc5ff0830e1909a2eb206c790eb961822ca7e8277b360661721c824f9ab02e"
+    },
+    {
+      "path": "crates/nxhost/src/services/binder.rs",
+      "bytes": 4280,
+      "sha256": "d434d51d4208d8fd97a17dc4de2346759cf89672e75729ec3aa8f3c114dc46f1"
+    },
+    {
+      "path": "crates/nxhost/src/services/bsd.rs",
+      "bytes": 31844,
+      "sha256": "1d2a581f709abc630e51ff4492df4f4fc31b6873462fd4e690d126c26b16c602"
+    },
+    {
+      "path": "crates/nxhost/src/services/friend.rs",
+      "bytes": 797,
+      "sha256": "1a6ce9f7ae283cdae2676a2aa69e24b9389f89f1239a74d038d699389ef6dfe7"
+    },
+    {
+      "path": "crates/nxhost/src/services/fs.rs",
+      "bytes": 22444,
+      "sha256": "a94cdcc0e27e9b5a23a31aa7f3ad4eefd912e0f9b8a0bf20b28938f489675758"
+    },
+    {
+      "path": "crates/nxhost/src/services/fs/save_policy.rs",
+      "bytes": 3628,
+      "sha256": "3b25112ed874795df6bae81c21843546385865db1d953d37e2d808893e44d328"
+    },
+    {
+      "path": "crates/nxhost/src/services/hid.rs",
+      "bytes": 29034,
+      "sha256": "7727dc8b0318446be0571a0c46ae13aefb38a8741df166fed5ad9e17ed2af27b"
+    },
+    {
+      "path": "crates/nxhost/src/services/hwopus.rs",
+      "bytes": 12693,
+      "sha256": "7ee1651c1f5770573ebb8b90e6b049f4d86405fad60ff09f12784bdc3fd6895f"
+    },
+    {
+      "path": "crates/nxhost/src/services/lan.rs",
+      "bytes": 4462,
+      "sha256": "b7e6dcd51f71b30bd397c1164ce71f85bfe22be43d933676f454bbfff8eb980d"
+    },
+    {
+      "path": "crates/nxhost/src/services/lanplay.rs",
+      "bytes": 6811,
+      "sha256": "c4cb90a24af8b26e1311c1242fc3418a95530a3f74912d515a7f47114857ecd4"
+    },
+    {
+      "path": "crates/nxhost/src/services/lm.rs",
+      "bytes": 2108,
+      "sha256": "59105adff22dd3103dc6cd772797e271f182c40d7fa13ecdadec6ddddd60b0c0"
+    },
+    {
+      "path": "crates/nxhost/src/services/mii.rs",
+      "bytes": 4855,
+      "sha256": "b025d31ed26d1e4c5358cf28818aff17d361be5016dbd7726e9dd6510f81fdb7"
+    },
+    {
+      "path": "crates/nxhost/src/services/mod.rs",
+      "bytes": 3261,
+      "sha256": "5bd12713553185bb54522925b4cf654ecc86c4e29252897745112174c1ec2aa9"
+    },
+    {
+      "path": "crates/nxhost/src/services/nfp.rs",
+      "bytes": 2060,
+      "sha256": "0586ed3bc2c47a5e6a06513c6c95c4795b5acd12a8791ed75836e10ee0fbc6f0"
+    },
+    {
+      "path": "crates/nxhost/src/services/nifm.rs",
+      "bytes": 4982,
+      "sha256": "520719027d8233fd022e4f5965c1281a20463704315cf6e527e5fd57f69f0566"
+    },
+    {
+      "path": "crates/nxhost/src/services/nvdrv.rs",
+      "bytes": 2900,
+      "sha256": "76613ca86aa180fbd6ab230f55b68ce2d74abb085d52914a4f6aa94647e28c98"
+    },
+    {
+      "path": "crates/nxhost/src/services/pl.rs",
+      "bytes": 3496,
+      "sha256": "ec8f386ec1514bd35a9d7951a08d5764ec641b130e2e97629051171ab9376652"
+    },
+    {
+      "path": "crates/nxhost/src/services/set.rs",
+      "bytes": 2782,
+      "sha256": "1e2f40681072ea02d58e23f51d29a573c0cc4573aab47d5a1697dab22dc5efa9"
+    },
+    {
+      "path": "crates/nxhost/src/services/time.rs",
+      "bytes": 8939,
+      "sha256": "9746fc242286e0092141adb05eeef662928691c8f817e607287efb16454ab1cf"
+    },
+    {
+      "path": "crates/nxhost/src/services/vi.rs",
+      "bytes": 16807,
+      "sha256": "f785054a6264870bbdd72d92a71d055f675d6e54a8177b1098c8f9f7febef23b"
+    },
+    {
+      "path": "crates/nxhost/src/services/vnet.rs",
+      "bytes": 15292,
+      "sha256": "612929389e35c6fa42288cb0d2c53df8786e352db12f560c3613d52858771fb0"
+    },
+    {
+      "path": "crates/nxhost/src/services/wireless.rs",
+      "bytes": 19418,
+      "sha256": "f14673868613e2f97ca7033eff37209e1d4bb946a3bf844fe93b17e7e77d94b7"
+    },
+    {
+      "path": "crates/nxhost/src/shared_type_diagnostics.rs",
+      "bytes": 3857,
+      "sha256": "601f0bc3077d930a61a4ae2c3d6f3e8b1732cc0343906ca13e181b61580b8583"
+    },
+    {
+      "path": "crates/nxhost/src/shm.rs",
+      "bytes": 1903,
+      "sha256": "9ddd843e2a90f02d30300662758dd1067e3ca6b8ef3c608388009fd0d2573ae5"
+    },
+    {
+      "path": "crates/nxhost/src/stubs.rs",
+      "bytes": 2362,
+      "sha256": "8b4350ecb7da4da77d8e9d5dfc1b2f64f19d2cfdb2de8ec2cf4b66b76f7ba7ab"
+    },
+    {
+      "path": "crates/nxhost/src/svc.rs",
+      "bytes": 23713,
+      "sha256": "dac0279384a73c3c9ae10d828c618e059fc2a8590a45764bc44c44cfc9a326b6"
+    },
+    {
+      "path": "crates/nxhost/src/video_diagnostics.rs",
+      "bytes": 12341,
+      "sha256": "f7ad935b39f6eb609814c32100474a84e24d317c9b26979b7b02476aff5efb76"
+    },
+    {
+      "path": "crates/nxhost/src/webpad.html",
+      "bytes": 12957,
+      "sha256": "a19548113febf829c24c75e9345c63d92069d335817d80280f454fa5a7fc6e9c"
+    },
+    {
+      "path": "crates/nxhost/src/webpad.rs",
+      "bytes": 11978,
+      "sha256": "000fd0fd841915a6e422162fe6a991c16e9af4aa8dbd7f42c7d6a9a04622c30b"
+    },
+    {
+      "path": "crates/nxpatch/Cargo.toml",
+      "bytes": 304,
+      "sha256": "46af0f29baa1f6ff2bfd6e844c5c10a061b36d13dad3cc10f7a4756fcb3fc53c"
+    },
+    {
+      "path": "crates/nxpatch/src/asm.rs",
+      "bytes": 8360,
+      "sha256": "486bb6e574f18fb7e08e739dfbbc7ce744a2b9582daf0583e0787773b7f77bf2"
+    },
+    {
+      "path": "crates/nxpatch/src/classify.rs",
+      "bytes": 4225,
+      "sha256": "b4e076443f3d34a1d765cf02a70e80f3b2f2cb8268ad09fc2163a8300d14f320"
+    },
+    {
+      "path": "crates/nxpatch/src/ips.rs",
+      "bytes": 8503,
+      "sha256": "86d8cfa459e1e818f585104b066da591b359927edac02d0f0a6ccaa343db467f"
+    },
+    {
+      "path": "crates/nxpatch/src/main.rs",
+      "bytes": 13515,
+      "sha256": "5b735edee12fc55bb1d0c520b66289f9b03a27dda8a37c34b345dd88202f39a4"
+    },
+    {
+      "path": "crates/nxpatch/src/rewrite.rs",
+      "bytes": 40462,
+      "sha256": "22cc9553e554e6d079a42e62c6986833a1c783dd7561f0e725427e9fdc13c56f"
+    },
+    {
+      "path": "crates/nxscan/Cargo.toml",
+      "bytes": 213,
+      "sha256": "5a6620e807270ebb5a7176c27a762721063c0dcb7b57f9f20cc3da1a6a2ad741"
+    },
+    {
+      "path": "crates/nxscan/src/main.rs",
+      "bytes": 3419,
+      "sha256": "abdf2604c66718eb2cbff331d7704a2719a996373d77e46b1eb61b248c8ac7b7"
+    },
+    {
+      "path": "crates/nxshader/Cargo.toml",
+      "bytes": 170,
+      "sha256": "6bebf92d1b6dbd82fc952e898605fae4217108e773c98a914179549b9022d6c5"
+    },
+    {
+      "path": "crates/nxshader/src/bin/shbatch.rs",
+      "bytes": 3617,
+      "sha256": "609eed0af1b9ac31671b6ee82995afb26c7223c4322f1eb96abf427c89eb57c1"
+    },
+    {
+      "path": "crates/nxshader/src/bin/shdis.rs",
+      "bytes": 1303,
+      "sha256": "28a21296cd4bc40d2d3e705d896104656908c93284e542648ea712bb966de52e"
+    },
+    {
+      "path": "crates/nxshader/src/bin/shextract.rs",
+      "bytes": 961,
+      "sha256": "d1d60ac1f10e615debdb88dd3f92da41cc102674296842ba256c74e0e9120ead"
+    },
+    {
+      "path": "crates/nxshader/src/bin/shmsl.rs",
+      "bytes": 1576,
+      "sha256": "bf973cee7087ea56f8f8a5819aa857a5f24ea8aad80b5d9b82fc3202bdf41d3d"
+    },
+    {
+      "path": "crates/nxshader/src/corpus.rs",
+      "bytes": 2132,
+      "sha256": "cce07c826c86773574845a399b15cad776c883a75dfe20ff832a068d5b277487"
+    },
+    {
+      "path": "crates/nxshader/src/inst.rs",
+      "bytes": 248397,
+      "sha256": "b516bd304a9677e4d0a688080ff7cf9551993926c3073d89013687efe303ca7f"
+    },
+    {
+      "path": "crates/nxshader/src/lib.rs",
+      "bytes": 736,
+      "sha256": "aecf5c7cf760954de8c56f02dbc6da8280fcde3856f768d55e33d13d80579b77"
+    },
+    {
+      "path": "crates/nxshader/src/msl.rs",
+      "bytes": 164303,
+      "sha256": "26f4d6c649fa38d6a2339741f9bcae556c916eb41ff39312ef97820b1b72d6aa"
+    },
+    {
+      "path": "crates/nxshader/src/msl_compute.rs",
+      "bytes": 1966,
+      "sha256": "fbebd41f624d121db3a0bef384c6d5fc811f351c4817cce5dc56809dad4d739d"
+    },
+    {
+      "path": "crates/nxshader/src/msl_dynamic_vertex.rs",
+      "bytes": 4712,
+      "sha256": "f37f67ca7472bb10e0b9f00f752cd31f380074a24e701e181b1ecf140172f554"
+    },
+    {
+      "path": "crates/nxshader/src/msl_memory.rs",
+      "bytes": 1887,
+      "sha256": "3a38662101756221165d8d6ca380d5eb2dbcb2cb9bff6490fac9589094685aab"
+    },
+    {
+      "path": "crates/nxshader/src/msl_regions.rs",
+      "bytes": 7670,
+      "sha256": "aa080ba9f11f8f701641f23a1dd9541cc1e116b82ac03a37b0a7cc67f3de5e96"
+    },
+    {
+      "path": "crates/nxshader/src/msl_structured.rs",
+      "bytes": 5232,
+      "sha256": "3fcd5f1f844cdd083a8bf7e0684c0be43e781c7cefad1686675612b5212b42ce"
+    },
+    {
+      "path": "crates/nxshader/src/msl_write_footprints.rs",
+      "bytes": 25766,
+      "sha256": "26aad9b7a1b5a48d511e8fd9bbe1958c9721d587b3a548d39bb9b7da35a82c6b"
+    },
+    {
+      "path": "crates/nxshader/src/program.rs",
+      "bytes": 13904,
+      "sha256": "2bf696644351cc5724c415a6e89c560a3ca03b3caf069892e846fbd3033f7865"
+    },
+    {
+      "path": "crates/nxshader/src/sph.rs",
+      "bytes": 2174,
+      "sha256": "b5d6c3d9bd8217faff0fec92b13a549cd08c45d0513c5de9a02640bca7b4422e"
+    },
+    {
+      "path": "crates/nxshader/src/table.rs",
+      "bytes": 56366,
+      "sha256": "09b0b7929ea510f5e3ba202188ba9333a46eebdcd9bcb5ede63d8705bde82432"
+    },
+    {
+      "path": "docs/BUILD_VALIDATION.md",
+      "bytes": 1498,
+      "sha256": "ef55c1bd9f4d0f09fd16124f0e54ee8ed131eaa52e62cfb433afc0941ef8473c"
+    },
+    {
+      "path": "docs/DEPENDENCY_LICENSES.json",
+      "bytes": 37157,
+      "sha256": "7e1794921896e44429426ebaf646e58dd23bcaaae34296540eb07295dbbdf609"
+    },
+    {
+      "path": "docs/LOCAL_INPUTS.md",
+      "bytes": 1914,
+      "sha256": "f92c8fee2d50c0346319199391005f341ebf84047fee4882d79e164788ce11e9"
+    },
+    {
+      "path": "games/fc27/identity.json",
+      "bytes": 837,
+      "sha256": "dca5b98fccbe8a323f87be4ce84c7c395e25038be0d6d553b22c376381bef131"
+    },
+    {
+      "path": "launcher/FC27Launcher.swift",
+      "bytes": 2173,
+      "sha256": "dd4865d09be685307ecf31e0f4dbf33646932f208860ef5f116ae7f3c4ce8a68"
+    },
+    {
+      "path": "launcher/game_slot.py",
+      "bytes": 15812,
+      "sha256": "b8899d79d610d71826a0e549198ef7f34a5a42755fd4591e5733b84782f41802"
+    },
+    {
+      "path": "launcher/launch_game.py",
+      "bytes": 5117,
+      "sha256": "04acff5170e1063a17742a3c288d735e46ca5953186aefcd7224318ecccf5030"
+    },
+    {
+      "path": "licenses/MacNativeGames-MIT.txt",
+      "bytes": 1084,
+      "sha256": "a035ee21f927d2247f30bedc8964c95b3a4d794f76c78cad178b68731815a79a"
+    },
+    {
+      "path": "tools/build.py",
+      "bytes": 597,
+      "sha256": "d0297364a0f4bdd7536f01faf318316481a072911e46f899e98accfb10acda63"
+    },
+    {
+      "path": "tools/cas/Cargo.toml",
+      "bytes": 218,
+      "sha256": "75d056895c4709e2f74b14deafe7c13e293a53d50ecbaf203cbe8014ddff59db"
+    },
+    {
+      "path": "tools/cas/src/bin/inspect_dlc_catalog.rs",
+      "bytes": 1331,
+      "sha256": "5d130497b9dd6aea226ed90d6533d8039cf2c3e0300ca6ed9a6eb2d853cd7402"
+    },
+    {
+      "path": "tools/cas/src/bin/scan_ebx_type.rs",
+      "bytes": 7513,
+      "sha256": "4854983cf65c1a254cd60eda0bc6dbc70683db93ebaa106f5b52fd8ca06c1754"
+    },
+    {
+      "path": "tools/cas/src/bin/scan_legacy_menu.rs",
+      "bytes": 7740,
+      "sha256": "34fcdfcd677b17d09edff78ba4068386502ee06b7c92c8f79e5e283c816777b5"
+    },
+    {
+      "path": "tools/cas/src/lib.rs",
+      "bytes": 1460,
+      "sha256": "29bf7bda0ebbda3b0cf88e67c152f5c6fb034c1f707881712cf8824d0d348c02"
+    },
+    {
+      "path": "tools/cas/src/main.rs",
+      "bytes": 597,
+      "sha256": "aa12e78ed9bad0deb384baa22a324ac89a7ea843bed465ae8311bcc37f44afc4"
+    },
+    {
+      "path": "tools/check_release.py",
+      "bytes": 4010,
+      "sha256": "cd3e61afa660f391013ff436a4a52ad9a909c75b35e46bb7542d50ecb445c80d"
+    },
+    {
+      "path": "tools/control_game.py",
+      "bytes": 8410,
+      "sha256": "eb47d7ec4a54be50fc635a138b7da1211aecf4ca9f09385e06a5d80af356c9d9"
+    }
+  ]
+}

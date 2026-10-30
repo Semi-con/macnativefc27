@@ -1,0 +1,14 @@
+{
+  "title": "EA SPORTS FC 27",
+  "title_id": "0100C49025D3E000",
+  "local_version_label": "1.8c.cab1",
+  "main_build_id": "fb81983aa1cc3a2e97402497e2ca652800000000000000000000000000000000",
+  "rewritten_module_sha256_from_private_development_run": {
+    "main": "704825d667dbfcb9e2e0e846626cde483a1644c9417b45d6743673e9e327c525",
+    "sdk": "e95e24bc05d40c4bd23bfd7c3990d0aecdbbb43209c844153311a182d8d34e25",
+    "renderer": "fdba6bd11b6b2393959a93261a5e9a8bbbd35bcfc97461a7aef5280ea5ff2d8b",
+    "rtld": "bbee7fdc9545ee20eecf28b7cdce09db120a849d2d2cef6e935736a1243471fb"
+  },
+  "npdm_sha256": "70c5c693bcd38cfdadbfe41d3271e703734b9e1d08d776bf52b2bc2318cd49f3",
+  "note": "Identity/checksum metadata only. The export has a different rewriter source fingerprint; regenerate all game-derived files locally. No game bytes are supplied."
+}

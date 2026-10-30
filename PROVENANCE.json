@@ -1,0 +1,22 @@
+{
+  "upstream": {
+    "repository": "https://github.com/c22dev/mush8",
+    "commit": "c27579db76efc0288891a02589bf02f6e1c775ee",
+    "license": "GPL-3.0"
+  },
+  "source_snapshot_date": "2026-10-30",
+  "export_changes": [
+    "Excluded optional Unicorn-linked equivalence oracle; verify explicitly fails instead of reporting success.",
+    "Excluded the one Unicorn-dependent aspect-scale test; retained source guards and non-Unicorn tests.",
+    "Excluded capture-derived shader write regression fixture module pending independent fixture provenance; production write-path implementation retained."
+  ],
+  "additional_copy": {
+    "path": "launcher/game_slot.py",
+    "repository": "https://github.com/ly05010419/MacNativeGames",
+    "license": "MIT",
+    "note": "Copied from the locally available reference checkout; existing copyright notices preserved.",
+    "commit": "5281186af56bdcce6ae9b3bb9daa9791bc02994e"
+  },
+  "data_policy": "No games, keys, firmware, extracted/rewritten modules, translated game shaders, assets, saves, screenshots, audio, private logs or prior Git objects.",
+  "verification": "Export build/test results must be recorded separately; original-game runtime evidence does not establish acceptance of this source export."
+}

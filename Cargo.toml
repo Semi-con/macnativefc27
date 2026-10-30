@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["crates/*", "tools/cas"]
+
+[profile.release]
+debug = 1

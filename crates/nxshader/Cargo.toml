@@ -1,0 +1,9 @@
+[package]
+license = "GPL-3.0-only"
+name = "nxshader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+nxfs = { version = "0.1.0", path = "../nxfs" }

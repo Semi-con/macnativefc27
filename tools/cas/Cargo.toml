@@ -1,0 +1,11 @@
+[package]
+license = "GPL-3.0-only"
+name = "fc27-local-cas-decode"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+oozextract = "=0.5.7"
+nxfs = { path = "../../crates/nxfs" }
+serde_json = "=1.0.154"
+sha1 = "=0.10.6"

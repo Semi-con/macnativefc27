@@ -1,0 +1,46 @@
+[package]
+license = "GPL-3.0-only"
+name = "nxhost"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+block2 = "0.6.2"
+clap = { version = "4.6.7", features = ["derive"] }
+dispatch2 = "0.3.1"
+libc = "0.2.190"
+mp4 = "0.14.0"
+memchr = "=2.8.3"
+serde_json = "=1.0.154"
+nxabi = { version = "0.1.0", path = "../nxabi" }
+nxfs = { version = "0.1.0", path = "../nxfs" }
+nxshader = { version = "0.1.0", path = "../nxshader" }
+objc2 = "0.6.5"
+objc2-audio-toolbox = "0.3.2"
+objc2-av-foundation = { version = "0.3.2", features = ["objc2-core-media", "objc2-core-video"] }
+objc2-core-audio-types = "0.3.2"
+objc2-core-foundation = "0.3.2"
+objc2-core-media = "0.3.2"
+objc2-core-video = "0.3.2"
+objc2-foundation = "0.3.2"
+objc2-core-haptics = { version = "0.3.2", default-features = false, features = ["std", "CHHapticDeviceCapability", "CHHapticEngine", "CHHapticEvent", "CHHapticParameter", "CHHapticPattern", "CHHapticPatternPlayer"] }
+objc2-game-controller = "0.3.2"
+objc2-metal = "0.3.2"
+objc2-quartz-core = "0.3.2"
+bcdec_rs = "0.2.0"
+image-webp = "0.2.4"
+png = "0.18.1"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2-app-kit = "0.3.2"
+objc2-core-audio = "0.3.2"
+sdl3-sys = { version = "0.7.2", features = ["build-from-source-static"] }
+
+[target.'cfg(target_os = "ios")'.dependencies]
+objc2-ui-kit = "0.3.2"
+objc2-core-motion = "0.3.2"
+objc2-avf-audio = "0.3.2"
+
+[build-dependencies]
+nxfs = { version = "0.1.0", path = "../nxfs" }
